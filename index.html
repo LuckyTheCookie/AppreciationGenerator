@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AppreciationGenerator</title>
+    <!-- Ajout du lien Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Ajout de la bibliothèque Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Ajout de votre fichier JavaScript -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="btn btn-primary me-2">Accueil</a>
+        <a href="names.html" class="btn btn-primary me-2">Noms</a>
+    </div>
+
+    <div class="container mt-5">
+        <div class="title">Générateur d'Appréciation</div>
+        <div class="description">
+            Bienvenue. Sélectionnez le nom dans le dropdown et cliquez sur le bouton "Générer" pour générer une appréciation aléatoire.
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <select id="nameDropdown" class="form-select">
+                    <option selected>Choisissez un nom</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <button id="generateButton" type="button" class="generate-btn btn-primary">Générer</button>
+                <!-- Boutons de niveau stockés dans "schoolResults" -->
+                <button id="enHausseButton" type="button" class="btn btn-success">En hausse</button>
+                <button id="moyenStableButton" type="button" class="btn btn-warning">Moyen / Stable</button>
+                <button id="enBaisseButton" type="button" class="btn btn-danger">En baisse</button>
+            </div>
+        </div>
+        <div id="appreciationContainer" class="text"></div>
+    </div>
+
+
+</body>
+
+
+</html>

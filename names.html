@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AppreciationGenerator</title>
+    <!-- Ajout du lien Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Ajout de la bibliothèque Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Ajout de votre fichier JavaScript -->
+    <script src="names_script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="btn btn-primary me-2">Accueil</a>
+        <a href="index.html" class="btn btn-primary me-2">Noms</a>
+    </div>
+
+    <div id="notificationContainer" class="position-fixed top-0 end-0 p-3">
+        <div id="notificationTemplate" class="alert alert-dismissible fade" role="alert">
+            <span id="notificationMessage"></span>
+            <button type="button" class="btn-close" aria-label="Close" onclick="hideNotification()"></button>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="title">Entrez ici les noms</div>
+        <div class="description">
+            Entrez les noms ci-dessous et appuyez sur "Entrée" pour les sauvegarder.
+            <br>
+        </div>
+        <input id="nameInput" class="input" type="text" placeholder="Entrez un nom...">
+        <ul id="nameList" class="list-group mt-3"></ul>
+    </div>
+
+<script>
+
+
+</script>
+
+</body>
+
+
+</html>
