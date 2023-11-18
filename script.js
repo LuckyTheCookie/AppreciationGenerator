@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Récupérer la liste des noms depuis le stockage local
     let names = JSON.parse(localStorage.getItem('names')) || [];
+    let gender;
+    let schoolResults;
+
 
     // Fonction pour générer le dropdown avec les noms
     function generateNameDropdown() {
@@ -21,10 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Appeler la fonction pour générer le dropdown au chargement de la page
     generateNameDropdown();
 
-    let schoolResults;
-
-    // ... (le reste de votre code)
-
     // Gestionnaire d'événement pour le bouton "En hausse"
     document.getElementById('upButton').addEventListener('click', function () {
         schoolResults = 'up';
@@ -43,6 +42,18 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('School Results:', schoolResults);
     });
 
+    // Gestionnaire d'événement pour le bouton "Homme"
+    document.getElementById('hommeButton').addEventListener('click', function () {
+        gender = 'boys';
+        console.log('Gender:', gender);
+    });
+
+    // Gestionnaire d'événement pour le bouton "Femme"
+    document.getElementById('femmeButton').addEventListener('click', function () {
+        gender = 'girls';
+        console.log('Gender:', gender);
+    });
+
     // Gestionnaire d'événement pour le bouton "Générer"
     document.getElementById('generateButton').addEventListener('click', async function () {
         // Générer une appréciation en fonction de la catégorie choisie
@@ -54,8 +65,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Fonction pour générer une appréciation en fonction de la catégorie choisie
     async function generateAppreciation() {
-        let categoryFile = `${schoolResults}.txt`; // Nom du fichier en fonction de la catégorie choisie
-
+        let categoryFile = `${schoolResults}-${gender}.txt`; // Nom du fichier en fonction de la catégorie et du genre choisis
+        
         try {
             // Utiliser Fetch API pour charger le contenu du fichier
             let response = await fetch(categoryFile);
