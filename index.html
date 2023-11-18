@@ -27,19 +27,23 @@
 
     <div class="container mt-5">
         <div class="row">
-            <div class="col-6">
+            <div class="col-4">
                 <select id="nameDropdown" class="form-select">
                     <option selected>Choisissez un nom</option>
                 </select>
             </div>
-            <div class="col-6 d-flex">
-                <button id="generateButton" type="button" class="generate-btn btn-primary">Générer</button>
+            <div class="d-flex mt-3">
+                <button id="generateButton" type="button" class="generate-btn btn-primary">♻️ Générer</button>
                 <!-- Boutons de niveau stockés dans "schoolResults" -->
-                <button id="upButton" type="button" class="btn btn-success">En hausse</button>
-                <button id="middleButton" type="button" class="btn btn-warning">Moyen / Stable</button>
-                <button id="downButton" type="button" class="btn btn-danger">En baisse</button>
-                <button id="hommeButton" type="button" class="btn btn-info">Homme</button>
-                <button id="femmeButton" type="button" class="btn btn-info">Femme</button>
+                <button id="noWorkButton" type="button" class="level-button btnwork btn-primary">↗️ Manque travail</button>
+                <button id="badButton" type="button" class="level-button btnwork btn-primary">⏺️ Décevant</button>
+                <button id="difficultButton" type="button" class="level-button btnwork btn-primary">↘️ Difficultés / Méthode</button>
+                <button id="justButton" type="button" class="level-button btnwork btn-primary">↗️ Tout juste</button>
+                <button id="absentButton" type="button" class="level-button btnwork btn-primary">⏺️ Absences</button>
+                <button id="minimumButton" type="button" class="level-button btnwork btn-primary">↘️ Bon, mais minimum</button>
+                <button id="attitudeButton" type="button" class="level-button btnwork btn-primary">↘️ Bon, mais attitude</button>
+                <button id="encouragementButton" type="button" class="level-button btnwork btn-primary">↘️ Encouragement</button>
+                <button id="perfectButton" type="button" class="level-button btnwork btn-primary">↘️ Parfait</button>
             </div>
         </div>
         <div id="appreciationContainer" class="text"></div>

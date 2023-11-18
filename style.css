@@ -30,6 +30,14 @@ body {
     color: #4488a7;
 }
 
+.appreciation {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #4488a7;
+}
+
 .label {
     font-size: 15px;
     font-weight: bold;
@@ -63,6 +71,25 @@ body {
     background-color: #65451F;
 }
 
+.btnwork {
+    background-color: #765827;
+    color: #fff;
+    padding : auto;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+
+}
+
+
+.btnwork:hover {
+    background-color: #65451F;
+}
+
 .generate-btn {
     background-color: #405dbd;
     color: #fff;
@@ -74,78 +101,9 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease-in-out;
     font-weight: bold;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
-#upButton {
-    background-color: #28ad4b;
-    color: #fff;
-    padding: 5px 10px;
-    cursor: pointer;
-    border: none;
-    font-size: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease-in-out;
-    font-weight: bold;
-    margin-right: 5px;
-}
-
-#middleButton {
-    background-color: #c9732c;
-    color: #fff;
-    padding: 5px 10px;
-    cursor: pointer;
-    border: none;
-    font-size: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease-in-out;
-    font-weight: bold;
-    margin-right: 5px;
-}
-
-#downButton {
-    background-color: #c92c2f;
-    color: #fff;
-    padding: 5px 10px;
-    cursor: pointer;
-    border: none;
-    font-size: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease-in-out;
-    font-weight: bold;
-    margin-right: 5px;
-}
-
-#hommeButton {
-    background-color: #2c31c9;
-    color: #fff;
-    padding: 5px 10px;
-    cursor: pointer;
-    border: none;
-    font-size: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease-in-out;
-    font-weight: bold;
-    margin-right: 5px;
-}
-
-#femmeButton {
-    background-color: #c92c2f;
-    color: #fff;
-    padding: 5px 10px;
-    cursor: pointer;
-    border: none;
-    font-size: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease-in-out;
-    font-weight: bold;
-    margin-right: 5px;
-}
 
 .switch-container {
     display: flex;
@@ -176,7 +134,6 @@ height: auto;
 #tapWordsContainer {
 position: relative;
 }
-
 
 
 @keyframes fadeIn {
