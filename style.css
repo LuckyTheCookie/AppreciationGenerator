@@ -74,6 +74,49 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease-in-out;
     font-weight: bold;
+    margin-right: 20px;
+}
+
+#upButton {
+    background-color: #28ad4b;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#middleButton {
+    background-color: #c9732c;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#downButton {
+    background-color: #c92c2f;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    margin-right: 5px;
 }
 
 .switch-container {

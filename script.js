@@ -26,19 +26,19 @@ document.addEventListener('DOMContentLoaded', function () {
     // ... (le reste de votre code)
 
     // Gestionnaire d'événement pour le bouton "En hausse"
-    document.getElementById('enHausseButton').addEventListener('click', function () {
+    document.getElementById('upButton').addEventListener('click', function () {
         schoolResults = 'up';
         console.log('School Results:', schoolResults);
     });
 
     // Gestionnaire d'événement pour le bouton "Moyen / Stable"
-    document.getElementById('moyenStableButton').addEventListener('click', function () {
+    document.getElementById('middleButton').addEventListener('click', function () {
         schoolResults = 'middle';
         console.log('School Results:', schoolResults);
     });
 
     // Gestionnaire d'événement pour le bouton "En baisse"
-    document.getElementById('enBaisseButton').addEventListener('click', function () {
+    document.getElementById('downButton').addEventListener('click', function () {
         schoolResults = 'down';
         console.log('School Results:', schoolResults);
     });
