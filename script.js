@@ -77,13 +77,16 @@ document.addEventListener('DOMContentLoaded', function () {
             let determinantReplacement = startsWithVowel ? "d'" : "de ";
 
             // Sélectionner une appréciation au hasard parmi les appréciations disponibles
-            let randomIndex = Math.floor(Math.random() * data.length);
-            let appreciation = data[randomIndex].replace(/\(determinant\)/g, determinantReplacement + selectedName);
+            let appreciation = '';
+            while (appreciation.trim() === '') {
+                let randomIndex = Math.floor(Math.random() * data.length);
+                appreciation = data[randomIndex].replace(/\(determinant\)/g, determinantReplacement + selectedName);
+            }
 
             return appreciation.trim();
         } catch (error) {
             console.error(error.message);
-            return ''; // Retourner une chaîne vide en cas d'échec
+            return 'Erreur lors de la génération de l\'appréciation'; // Retourner un message d'erreur en cas d'échec
         }
     }
 
