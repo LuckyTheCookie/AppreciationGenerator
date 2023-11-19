@@ -28,6 +28,9 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     color: #765827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .appreciation {
@@ -35,7 +38,10 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     margin-top: 20px;
-    color: #4488a7;
+    color: #765827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .label {
@@ -121,6 +127,9 @@ body {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image-container {
@@ -128,14 +137,13 @@ display: inline-block;
 position: relative;
 }
 
-#telegrapheImage {
-display: block;
-width: 100%;
-height: auto; 
-}
-
-#tapWordsContainer {
-position: relative;
+.form-select {
+    width: 30%;
+    border: 3px solid #ccc;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
