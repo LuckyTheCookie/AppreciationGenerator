@@ -155,5 +155,6 @@ document.addEventListener('DOMContentLoaded', function () {
             // Ajoutez ici d'autres options de configuration selon vos besoins
         });
     });
+    
 });
 
