@@ -33,7 +33,7 @@ body {
     justify-content: center;
 }
 
-.appreciation {
+#appreciationContainer {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -99,18 +99,48 @@ body {
     background-color: #65451F;
 }
 
-.generate-btn {
-    background-color: #405dbd;
+.btn-copy {
+    background-color: #36ad3c;
     color: #fff;
-    padding: 5px 10px;
+    padding : auto;
     cursor: pointer;
     border: none;
-    font-size: 15px;
+    font-size: 17px;
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease-in-out;
     font-weight: bold;
-    margin-right: 30px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 16px;
+}
+
+.btn-copy:hover {
+    background-color: #1d8034;
+}
+
+.btn-clear:hover {
+    background-color: #80221d;
+}
+
+.btn-clear {
+    background-color: #ad3c36;
+    color: #fff;
+    padding : auto;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 16px;
 }
 
 
