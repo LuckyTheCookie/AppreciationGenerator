@@ -176,16 +176,6 @@ position: relative;
     justify-content: center;
 }
 
-#maintenanceHeader {
-    background-color: rgb(229, 82, 56);
-    padding: 10px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-
 @keyframes fadeIn {
     from {
         opacity: 0;
