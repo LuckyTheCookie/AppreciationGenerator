@@ -176,7 +176,7 @@ position: relative;
     justify-content: center;
 }
 
-.maintenanceHeader {
+#maintenanceHeader {
     background-color: rgb(229, 82, 56);
     padding: 10px;
     text-align: center;
