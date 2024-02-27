@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     generateNameDropdown();
 
     // Gestionnaires d'événements pour chaque bouton
-    ['noWorkButton', 'badButton', 'difficultButton', 'justButton', 'absentButton', 'minimumButton', 'attitudeButton', 'encouragementButton', 'perfectButton'].forEach(function (buttonId) {
+    ["noWorkButton","badButton","difficultButton","justButton","sameButton","minimumButton","attitudeButton","down","augmentationButton","upButton","positiveButton","verygoodButton"].forEach(function (buttonId) {
         document.getElementById(buttonId).addEventListener('click', async function () {
             schoolResults = buttonId.toLowerCase().replace('button', ''); // Extraire la catégorie à partir de l'ID du bouton
             console.log('School Results:', schoolResults);
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Fonction pour générer une appréciation en fonction de la catégorie choisie
     async function generateAppreciation() {
-        let categoryFile = `./Appreciations-t1/${schoolResults}.txt`; // Nom du fichier en fonction de la catégorie choisie
+        let categoryFile = `./Appreciations-t2/${schoolResults}.txt`; // Nom du fichier en fonction de la catégorie choisie
         
         try {
             // Utiliser Fetch API pour charger le contenu du fichier
@@ -156,5 +156,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
     
+    const hoverBtn = document.getElementById('hover-btn');
+    const banner = document.getElementById('copyright-banner');
+
+    hoverBtn.addEventListener('mouseover', () => {
+        banner.classList.add('active');
+    });
+
+    hoverBtn.addEventListener('mouseout', () => {
+        banner.classList.remove('active');
+});
 });
 

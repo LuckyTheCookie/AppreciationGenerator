@@ -186,6 +186,22 @@ position: relative;
     }
 }
 
+
+.maintenance-banner {
+    background-color: #f44336; /* couleur rouge */
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    top: 0;
+    width: 100%;
+    font-weight: bold;
+    z-index: 9999; /* pour être sûr que le bandeau s'affiche au-dessus de tout le reste */
+}
+
+
 .to-the-center {
     text-align: center;
     display: flex;
@@ -200,18 +216,4 @@ a {
     color: #000000;
     /* souligner le texte */
     text-decoration: underline;
-}
-
-.maintenance-banner {
-    background-color: #f44336; /* couleur rouge */
-    color: white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    top: 0;
-    width: 100%;
-    font-weight: bold;
-    z-index: 9999; /* pour être sûr que le bandeau s'affiche au-dessus de tout le reste */
 }
